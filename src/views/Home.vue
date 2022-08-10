@@ -61,8 +61,8 @@ export default {
       justify-content: center;
 
       &--image-cont {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         box-shadow: 2px 2px 3px 2px lightgrey;
         border-radius: 5px;
         overflow: hidden;
