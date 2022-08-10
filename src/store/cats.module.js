@@ -40,7 +40,15 @@ export const catsModule = {
                 .join("&");
 
             await RequestService.read(`/images/search?${query}`).then(r => {
-                commit('setData', { imagesList: r.data })
+                let imagesList = []
+
+                if (data.loadMoreImages) {
+                    imagesList = [ ...state.imagesList, ...r.data ]
+                } else {
+                    imagesList = r.data
+                }
+
+                commit('setData', { imagesList })
             })
         },
 
