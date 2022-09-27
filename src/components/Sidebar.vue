@@ -51,7 +51,6 @@ export default {
 .sidebar {
   width: 20%;
   background-color: #e6e3e3;
-  height: 100vh;
   padding: 32px;
 
   &__header {

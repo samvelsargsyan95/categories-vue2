@@ -24,7 +24,7 @@ export const catsModule = {
             }
 
             const options = {
-                limit: state.limit,          
+                limit: state.limit,
             }
 
             if (page) {
@@ -43,7 +43,7 @@ export const catsModule = {
                 let imagesList = []
 
                 if (data.loadMoreImages) {
-                    imagesList = [ ...state.imagesList, ...r.data ]
+                    imagesList = [...state.imagesList, ...r.data]
                 } else {
                     imagesList = r.data
                 }

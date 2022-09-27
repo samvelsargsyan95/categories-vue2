@@ -20,5 +20,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Task Description
+Need to do an API call to get menu items (categories), for clicking every category need to do an API call to get images with that category. After clicking Load More Images need to get more images with that category
